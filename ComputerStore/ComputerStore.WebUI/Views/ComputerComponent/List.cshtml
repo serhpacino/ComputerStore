@@ -1,0 +1,18 @@
+﻿@using ComputerStore.Domain.Entities
+@model IEnumerable<ComputerComponent>
+
+@{
+    ViewBag.Title = "Computer Components";
+}
+
+@foreach (var p in @Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        <p>@p.Description</p>
+        <h4>@p.Price.ToString("# zl")</h4>
+    </div>
+}
+
+
+
