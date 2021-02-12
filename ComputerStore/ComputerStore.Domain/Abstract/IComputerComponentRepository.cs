@@ -10,5 +10,7 @@ namespace ComputerStore.Domain.Abstract
     public interface IComputerComponentRepository
     {
         IEnumerable<ComputerComponent> ComputerComponents { get; }
+        void SaveProduct(ComputerComponent computercomponent);
+        ComputerComponent DeleteProduct(int computercomponentId);
     }
 }
